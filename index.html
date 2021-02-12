@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titulo do meu site</title>
+        <meta charset="utf-8"/>
+        <link href="/danki-code/Projeto-formulario/style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Meu formulário</legend>
+                <div><input type="text" name="nome" placeholder="Digite o seu nome"></div>
+                <div><input type="text" name="email" placeholder="Digite o seu e-mail"></div>
+                <div>
+                    <select class="idade" name="lista">
+                        <option disabled selected>Qual sua idade?</option>
+                        <option value="20-24">20-24</option>
+                        <option value="25-30">25-30</option>
+                        <option value="40+">40+</option>   
+                    </select>
+                </div>
+                
+                <h2>Qual sua cidade?</h2>
+                <div class="input"> 
+                <div>              
+                    <input type="radio" name ="cidade" value="Florianopolis"/><span>Florianopolis</span> 
+                </div>
+                
+                <div>
+                    <input type="radio" name ="cidade" value="Sao Paulo"/><span>Sao Paulo</span> 
+                </div>     
+                
+                <div>
+                    <input type="radio" name ="cidade" value="Rio de Janeiro"/><span>Rio de Janeiro</span> 
+                </div>  
+                </div>      
+                
+                <h2>Grau de ensino:</h2>
+                <div class="input">
+                <div>              
+                    <input type="checkbox" name ="formacao[]" value="Ensino Medio"><span>Ensino Medio</span> 
+                </div>
+                <div>
+                    <input type="checkbox" name ="formacao[]" value="Curso Tecnico"><span>Curso Tecnico</span> 
+                </div>     
+                <div>
+                    <input type="checkbox" name="formacao[]" value="Graduaçao"><span>Graduaçao</span> 
+                </div>  
+                <div>
+                    <input type="checkbox" name="formacao[]" value="Mestrado"><span>Mestrado</span> 
+                </div> 
+                <div>
+                    <input type="checkbox" name="formacao[]" value="Dontorado"><span>Dontorado</span> 
+                </div> 
+                </div>
+                <h2>Qual sua pretenção de vaga?</h2>
+                <div>
+                    <select class="vaga" name="vaga">
+                        <option disabled selected>Selecione uma opção</option>
+                        <option>Setor Administrativo</option>
+                        <option>Setor Financeiro</option>
+                        <option>Setor de Projetos</option>
+                        <option>Setor de Manutenção</option>
+                    </select>
+                </div>
+                <h2>Nos conte um pouco sobre suas experiencias:</h2>
+                <div>
+                    <textarea name="observacion" placeholder="Maximo de 500 caracteres!"></textarea>
+                </div> 
+                <div>
+                    <input type="submit" name="acao" value="Enviar!">
+                </div>
+                <form>
+                    <input id="file" type="file" name="file">
+                    <label for="file">Clique aqui para adicionar seu(s) certificado(s)</label>
+                </form>   
+            </fieldset>
+        </form>
+    </body>
+</html>
